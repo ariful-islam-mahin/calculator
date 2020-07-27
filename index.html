@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body >
+    <div class="container">
+        <div class="calculator  mt-5 mx-auto rounded border p-4 bg-light">
+            <input id="numberInput"  class="form-control text-right mb-3" style="height: 80px; font-size:30px !important;" type="text">
+            <div class="row text-center py-2 ">
+                <div class="col-3">
+                    <input type="button" value="7" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="8" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="9" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="/" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+            </div>
+            <div class="row text-center py-2">
+                <div class="col-3">
+                    <input type="button" value="4" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="5" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="6" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="*" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+            </div>
+            <div class="row text-center py-2">
+                <div class="col-3">
+                    <input type="button" value="1" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="2" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="3" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="-" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+            </div>
+            <div class="row text-center py-2">
+                <div class="col-3">
+                    <input type="button" value="0" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="00" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="." onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="+" onclick="numberClick(this.value)" class="btn btn-dark p-3 w-100">
+                </div>
+            </div>
+            <div class="row text-center py-2">
+                <div class="col-3">
+                    <input type="button" value="DEL" onclick="delClick()" class="btn btn-danger w-100">
+                </div>
+                <div class="col-3">
+                    <input type="button" value="AC" onclick="acClick()" class="btn btn-danger w-100">
+                </div>
+                <div class="col-6">
+                    <input type="button" value="=" onclick="equal()" class="btn btn-success w-100">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
